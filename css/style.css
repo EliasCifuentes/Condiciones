@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    border: solid red 1px;
+}
+
+.boxes {
+    border: solid blue 1px;
+}
+
+.seccion1 {
+    grid-area: seccion1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    padding: 5%;
+}
+
+.imagen1 {
+    max-height: 75%;
+    max-width: 20%;
+}
+
+.imagen1:hover{
+    cursor: pointer;
+}
+
+.seccion2 {
+    grid-area: seccion2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 15px;
+}
+
+
+.seccion3 {
+    grid-area: seccion3;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    display: grid;
+
+    grid-template-areas:
+    'seccion1'
+    'seccion2'
+    'seccion3';
+
+    grid-template-rows: 500px 900px 300px;
+}
+
+.stikers{
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+}
+
+.Stikers1 {
+    display: flex;
+    flex-direction: column;
+    border: solid red 1px;
+    gap: 15px;
+}
+
+.Stikers2 {
+    display: flex;
+    flex-direction: column;
+    border: solid red 1px;
+    gap: 15px;
+}
+
+.Stikers3 {
+    display: flex;
+    flex-direction: column;
+    border: solid red 1px;
+    gap: 15px;
+}
+
+
