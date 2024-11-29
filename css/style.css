@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 
-.box {
-    border: solid red 1px;
+body {
+    background-image: url(../img/Fondo.jfif);
+    background-repeat: no-repeat;
+    background-size: 1000px
 }
 
-.boxes {
-    border: solid blue 1px;
-}
+/* Ejercicio N°1 */
 
 .seccion1 {
     grid-area: seccion1;
@@ -43,11 +43,15 @@
     cursor: pointer;
 }
 
+
+/* Ejercicio N°2 */
+
 .seccion2 {
     grid-area: seccion2;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     padding: 15px;
@@ -63,45 +67,85 @@
 .seccion2 button{
     width: 250px;
     height: 75px;
+    
 }
+
+.Stickers {
+    background-color: darkgrey;
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+    border: black solid 2px;
+}
+
 
 .Stikers1 {
     width: 250px;
     height: 300px;
-}
-
-.Stikers1 img {
-    max-width: 100%;
-    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .Stikers2 {
     width: 250px;
     height: 300px;
-}
-
-.Stikers2 img {
-    max-width: 100%;
-    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .Stikers3 {
     width: 250px;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Stikers1 img {
+    max-width: 100%;
+    height: 85%;
+    border: black solid 1px;
+}
+
+.Stikers2 img {
+    max-width: 100%;
+    height: 85%;
+    border: black solid 1px;
 }
 
 .Stikers3 img {
     max-width: 100%;
     height: 85%;
+    border: black solid 1px;
 }
 
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
 
+.mensaje button {
+    font-size: 20px;
+    border-radius: 300px;
+}
 
+.mensaje button:hover {
+    cursor: pointer;
+}
+
+/* Ejercicio N°3 */
 
 .seccion3 {
     grid-area: seccion3;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    
 }
 
 .seccion3 h3 {
@@ -109,6 +153,30 @@
     font-family: "Protest Revolution", sans-serif;
     font-weight: 800px;
     font-style: normal;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: brown solid 3px;
+    padding: 20px;
+}
+
+#digito1, #digito2, #digito3 {
+    width: 35px;
+    height: 35px;
+}
+
+.ingresar {
+    width: 100px;
+    height: 30px;
+}
+
+.ingresar:hover {
+    cursor: pointer;
 }
 
 
@@ -122,33 +190,6 @@
     'seccion3';
 
     grid-template-rows: 500px 700px 300px;
-}
-
-.stikers{
-    display: flex;
-    gap: 25px;
-    padding: 10px;
-}
-
-.Stikers1 {
-    display: flex;
-    flex-direction: column;
-    border: solid red 1px;
-    gap: 15px;
-}
-
-.Stikers2 {
-    display: flex;
-    flex-direction: column;
-    border: solid red 1px;
-    gap: 15px;
-}
-
-.Stikers3 {
-    display: flex;
-    flex-direction: column;
-    border: solid red 1px;
-    gap: 15px;
 }
 
 
