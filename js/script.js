@@ -1,5 +1,16 @@
 /* Ejercicio N°1 */
 
+const imagen = document.querySelector("#imagen1");
+
+imagen.addEventListener('click' , () => {
+    if(imagen.classList.contains("modificar")){
+        imagen.classList.remove("modificar")
+    }
+    else {
+        imagen.classList.add("modificar")
+    }
+})
+
 
 
 /* Ejercicio N°2 */ 
