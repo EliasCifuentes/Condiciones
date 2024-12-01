@@ -24,7 +24,7 @@ const numero1 = document.querySelector(".s1").value;
 const numero2 = document.querySelector(".s2").value;
 const numero3 = document.querySelector(".s3").value;
 
-let suma = Number(numero1) + Number(numero2) + Number(numero3);
+const suma = Number(numero1) + Number(numero2) + Number(numero3);
 
     if(suma <= 10 && suma > 0){
 
@@ -38,6 +38,10 @@ let suma = Number(numero1) + Number(numero2) + Number(numero3);
         else if (suma < 0 ){
             respuesta = document.querySelector(".respuesta");
             respuesta.innerHTML = "No puede ser valores negativos !!!";
+        }
+        else if (numero1 == "" && numero2 == ""  && numero3 == ""){
+            respuesta = document.querySelector(".respuesta");
+            respuesta.innerHTML = "Debes seleccionar minimo 1 Stikers!!";
         }
             else{
 
